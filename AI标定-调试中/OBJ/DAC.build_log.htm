@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yan lutian, njit, LIC=4ZLKP-M5Y2W-66DQS-LZTG1-05QIU-VDT4I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  F:\Keil5_InstallPath\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\yanlutian\S\HanDan-V2.5\输入输出板\输入输出板-AI标定\AI标定-调试中\USER\DAC.uvprojx
+Project File Date:  07/25/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'F:\Keil5_InstallPath\ARM\ARMCC\Bin'
+Build target 'DAC'
+compiling AI_AO.c...
+AI_AO.h(75): warning:  #1295-D: Deprecated declaration AI_kb_WriteToFlash - give arg types
+  extern void AI_kb_WriteToFlash();
+AI_AO.c(18): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      t = (u16)((value - 
+O1_b) * AO1_K);
+AI_AO.c(21): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      t = (u16)((value - 
+O2_b) * AO2_K);
+AI_AO.c(40): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          t = (u16)((value - 
+O1_b) * AO1_K);
+AI_AO.c(46): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          t = (u16)((value - 
+O2_b) * AO2_K);
+AI_AO.c(74): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      t[0] = ((float)(read_value[0] - 
+I1_b) / 
+I1_K) + AO2_b;
+AI_AO.c(75): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      t[1] = ((float)(read_value[1] - 
+I2_b) / 
+I2_K) + AO2_b;
+AI_AO.c(76): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      t[2] = ((float)(read_value[2] - 
+I3_b) / 
+I3_K) + AO2_b;
+AI_AO.c(77): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      t[3] = ((float)(read_value[3] - 
+I4_b) / 
+I4_K) + AO2_b;
+AI_AO.c(113): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[1] = (u16)
+I1_K;//K1L
+AI_AO.c(115): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[3] = (u16)
+I1_b;//B1L
+AI_AO.c(118): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[5] = (u16)
+I2_K;//K2L
+AI_AO.c(120): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[7] = (u16)
+I2_b;//B2L
+AI_AO.c(123): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[9] = (u16)
+I3_K;//K3L
+AI_AO.c(125): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[11] = (u16)
+I3_b;//B3L
+AI_AO.c(128): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[13] = (u16)
+I4_K;//K4L
+AI_AO.c(130): warning:  #69-D: integer conversion resulted in truncation
+      EepWrBuf[15] = (u16)
+I4_b;//B4L
+AI_AO.c: 17 warnings, 0 errors
+compiling main.c...
+Digital.h(205): warning:  #1295-D: Deprecated declaration UsbPower_Init - give arg types
+  extern void UsbPower_Init();
+AI_AO.h(75): warning:  #1295-D: Deprecated declaration AI_kb_WriteToFlash - give arg types
+  extern void AI_kb_WriteToFlash();
+main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=21224 RO-data=424 RW-data=140 ZI-data=2300  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin -o "..\OBJ\DAC.bin" "..\OBJ\DAC.axf"
+"..\OBJ\DAC.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_DAC
+  F:\Keil5_InstallPath\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
